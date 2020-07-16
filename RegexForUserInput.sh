@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+"(^[a-zA-Z][0-9]){8,}([A-Z])"#!/usr/local/bin/bash
 
 shopt -s extglob
 
@@ -54,7 +54,7 @@ else
         echo "Invalid Email Id"
 fi
 
-patPassword="^[\+0-9]{2,3}[ ]?[0-9]{10}$"
+patPassword="(^[a-zA-Z][0-9]){8,}([A-Z][0-9])"
 
 if [[ $passwrd =~ $patPasswrd ]]
 then
