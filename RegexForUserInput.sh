@@ -12,6 +12,9 @@ read lastName
 echo "Enter Your Mobile No."
 read mobileNo
 
+echo "Enter Your Email Id"
+read emailId
+
 patFirstName="^[A-Z]{1}[A-Z a-z]{3,}$"
 
 if [[ $firstName =~ $patFirstName ]]
@@ -37,5 +40,14 @@ then
         echo "Valid Mobile No."
 else
         echo "Invalid Mobile No."
+fi
+
+patEmailId="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+
+if [[ $emailId =~ $patEmailId ]]
+then
+        echo "Valid Email Id"
+else
+        echo "Invalid Email Id"
 fi
 
