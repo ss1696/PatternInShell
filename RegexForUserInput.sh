@@ -15,6 +15,9 @@ read mobileNo
 echo "Enter Your Email Id"
 read emailId
 
+echo "Enter Your Password"
+read passwrd
+
 patFirstName="^[A-Z]{1}[A-Z a-z]{3,}$"
 
 if [[ $firstName =~ $patFirstName ]]
@@ -49,5 +52,14 @@ then
         echo "Valid Email Id"
 else
         echo "Invalid Email Id"
+fi
+
+patPassword="^[\+0-9]{2,3}[ ]?[0-9]{10}$"
+
+if [[ $passwrd =~ $patPasswrd ]]
+then
+        echo "Valid Password"
+else
+        echo "Invalid Password"
 fi
 
