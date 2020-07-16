@@ -54,7 +54,7 @@ else
         echo "Invalid Email Id"
 fi
 
-patPassword="(^[a-zA-Z][0-9]){8,}([A-Z][0-9])"
+patPassword="(^[a-zA-Z][!^@#$&][0-9]){8,}([A-Z])([0-9])([!@#$&^])"
 
 if [[ $passwrd =~ $patPasswrd ]]
 then
